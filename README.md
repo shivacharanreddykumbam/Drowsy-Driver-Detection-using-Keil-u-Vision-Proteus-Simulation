@@ -1,1 +1,12 @@
-# K.ShivaCharanReddy
+# Drowsy Driver Detection System using Keil and Proteus Simulation
+Drowsy detection system designed using 8051 micro controller, Eye blink sensor,  16*2 Lcd, Dc motor,  Buzzer and Driver IC L293D.  This application designed for drivers who do mistakes while driving vehicles even they are sleepy or drowsy. this eye blink sensor helps and protects humans as well  as vehicle. whenever driver close eyes vehicle will stopped. this application source code developed using Embedded C language in Keil IDE and simulated with Proteus simulation tool.
+
+The implementation process began with hardware assembly. Components were connected following the system architecture, ensuring correct pin assignments and voltage levels. Special attention was given to grounding and noise isolation to avoid false triggering from sensor fluctuations.The software was programmed using Embedded C in the Keil µVision IDE. It included routines for reading the sensor input, managing timers, updating the LCD display, activating/deactivating the buzzer, and controlling the motor. Efficient coding practices like debouncing and interrupt handling were incorporated to enhance reliability.Simulation using Proteus Design Suite was crucial for validating the system before hardware testing. Different driver behavior scenarios were simulated to check whether the system correctly identifies and reacts to drowsy and alert conditions. Bugs and logic errors were corrected early during this phase.Upon successful simulation, the program was flashed onto the AT89S52 microcontroller, and real-world testing commenced. The system was tested under various conditions, such as different lighting environments and false blinking patterns, to ensure it performs reliably and consistently.The final step involved fine-tuning the system for practical usability. Threshold timings were adjusted, buzzer volume optimized, and LCD messages refined for clarity. This ensured that the system could be realistically applied in an actual vehicle environment without majormodifications.
+
+# Steps to implement with the mentioned Resources :
+1. Open Keil Micro vision application.
+2. Use the source code given in .c file and compile and debug it,which will run without any Errors. 
+3. Now convert code in to an .Hex file in the Keil Micro vision application itself.
+4. Open Proteus application and Simulate the circuit which is given in resources as it is.
+5. Double tap on the 8051 MicroController(AT89C52) upload the .Hex file in the 'Program file' section
+6. Then Run the Simulation 
